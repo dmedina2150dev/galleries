@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <style>
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #dbdbdb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .galeria {
+            display: flex;
+            width: 1200px;
+            height: 800px;
+        }
+        .galeria img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            filter: brightness(80%);
+            transition: .7s ease;
+        }
+        .galeria img:hover {
+            width: inherit;
+            opacity: 1;
+            filter: brightness(130%);
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="galeria">
+            <img src="./assets/img/alexander-grey-unsplash.jpg" alt="Imagen de alexander-grey Descargada de unsplash">
+            <img src="./assets/img/greyson-joralemon-unsplash.jpg" alt="Imagen de greyson-joralemon Descargada de unsplash">
+            <img src="./assets/img/john-thomas-unsplash.jpg" alt="Imagen de john-thomas Descargada de unsplash">
+            <img src="./assets/img/luca-upper-Z-unsplash.jpg" alt="Imagen de luca-upper-Z Descargada de unsplash">
+            <img src="./assets/img/tristan-gassert-unsplash.jpg" alt="Imagen de tristan-gassert Descargada de unsplash">
+        </div>
+    </section>
+    
+</body>
+</html>
